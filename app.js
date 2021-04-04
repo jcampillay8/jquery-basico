@@ -28,18 +28,24 @@ $(document).ready(function () {
 
     // $("img:last").attr("width","50");
 
-    var parrafo = $('#resultado p');
+    // var parrafo = $('#resultado p');
 
-    $('.btn-primary').click(function(){
-        parrafo.addClass("display-4");
-    })
+    // $('.btn-primary').click(function(){
+    //     parrafo.addClass("display-4");
+    // })
 
-    $('.btn-danger').click(function(){
-        parrafo.removeClass("display-4");
-    })
+    // $('.btn-danger').click(function(){
+    //     parrafo.removeClass("display-4");
+    // })
 
-    $('.btn-warning').click(function(){
-        parrafo.toggleClass("display-4");
+    // $('.btn-warning').click(function(){
+    //     parrafo.toggleClass("display-4");
+    // })
+
+    $('#formulario').submit(function(evento){
+        evento.preventDefault();
+        var nombre = $('#nombre').val();
+        console.log(nombre);
     })
 
 
