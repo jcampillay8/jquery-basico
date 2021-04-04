@@ -1,0 +1,32 @@
+$(document).ready(function () {
+    
+    // $('h1').html("Etiqueta h1");
+    // $(".display-4").html("desde clase");
+    // $("#idh1").html("desde id");
+
+    // document.querySelector("h1").innerHTML =" Etiqueta h1";
+    // document.querySelector(".display-4").innerHTML ="desde clase";
+    // document.querySelector("#idh1").innerHTML ="desde id";
+
+    // $(".container h1").html("cambio de texto");
+    // $(".container h1:first").html("cambio de texto");
+    // $(".container h1:last").html("cambio de texto");
+
+    // $("#idh1").addClass("text-danger");
+    // $("#idh1").removeClass("display-4");
+
+    // $("#contenido").append("<h1>Este es un elemnto al final</h1>");
+    // $("#contenido").prepend("<h1>Este es un elemnto al principio</h1>");
+
+    // $("#color-azul").css('color', "blue");
+    // $("#color-azul").css({color: "blue", background:"salmon", padding:"20px"});
+
+    // // $("#color-azul").remove();
+    // $("#color-azul").hide();
+
+    // $("img").attr("src", "https://codeorigin.jquery.com/jquery-wp-content/themes/jquery/content/books/learning-jquery-4th-ed.jpg");
+
+    // $("img:last").attr("width","50");
+
+    
+});
