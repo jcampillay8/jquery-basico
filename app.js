@@ -48,7 +48,7 @@ $(document).ready(function () {
     //     console.log(nombre);
     // })
 
-    var resultado = $('#resultado p');
+    // var resultado = $('#resultado p');
 
     // $('.btn-primary').click(function(){
     //     resultado.show(1000);
@@ -62,16 +62,34 @@ $(document).ready(function () {
     //     resultado.toggle(1000);
     // })
 
+    // $('.btn-primary').click(function(){
+    //     resultado.fadeOut(3000);
+    // })
+
+    // $('.btn-danger').click(function(){
+    //     resultado.fadeIn('slow');
+    // })
+
+    // $('.btn-warning').click(function(){
+    //     resultado.fadeIn(3000);
+    // })
+
+    var resultado = $('#resultado');
+
     $('.btn-primary').click(function(){
-        resultado.fadeOut(3000);
-    })
-
-    $('.btn-danger').click(function(){
-        resultado.fadeIn('slow');
-    })
-
-    $('.btn-warning').click(function(){
-        resultado.fadeIn(3000);
+        resultado.animate({
+            right: '250px',
+            opacity: '0.5',
+            height: '+=150px',
+            width: '150px'
+        }, 3000, function(){
+            resultado.animate({
+                left: '0px',
+                opacity: '1',
+                height: '-=150px',
+                width: '-150px'
+            },1000)
+        } );
     })
 
 
