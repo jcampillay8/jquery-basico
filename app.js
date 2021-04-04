@@ -42,10 +42,36 @@ $(document).ready(function () {
     //     parrafo.toggleClass("display-4");
     // })
 
-    $('#formulario').submit(function(evento){
-        evento.preventDefault();
-        var nombre = $('#nombre').val();
-        console.log(nombre);
+    // $('#formulario').submit(function(evento){
+    //     evento.preventDefault();
+    //     var nombre = $('#nombre').val();
+    //     console.log(nombre);
+    // })
+
+    var resultado = $('#resultado p');
+
+    // $('.btn-primary').click(function(){
+    //     resultado.show(1000);
+    // })
+
+    // $('.btn-danger').click(function(){
+    //     resultado.hide(1000);
+    // })
+
+    // $('.btn-warning').click(function(){
+    //     resultado.toggle(1000);
+    // })
+
+    $('.btn-primary').click(function(){
+        resultado.fadeOut(3000);
+    })
+
+    $('.btn-danger').click(function(){
+        resultado.fadeIn('slow');
+    })
+
+    $('.btn-warning').click(function(){
+        resultado.fadeIn(3000);
     })
 
 
